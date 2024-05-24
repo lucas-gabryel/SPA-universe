@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-home: url(./assets/home.png);
+    --bg-universe: url(./assets/the-universe.png);
+    --bg-explorer: url(./assets/explorer.png);
+    --primary-color: #ffffff;
+    --text-color-hover: #02799D;
+    --text-color-secundary: #C4C4CC;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background: var(--bg-home) no-repeat center center/cover;
+/*     background-image: var(--bg-home);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+
+nav {
+    padding: 4rem 7.2rem;
+    display: flex;
+    gap: 3.2rem;
+
+    align-items: center;
+}
+
+nav span {
+    display: flex;
+    gap: 3.2rem;
+
+    align-items: center;
+}
+
+nav span a {
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--text-color-secundary);
+
+   
+}
+
+/* Pages */
+
+h1 {
+     font-size: 4.8rem;
+     font-weight: 700;
+     color: var(--text-color-secundary);
+
+     margin-bottom: 1.6rem;
+}
+
+p {
+    font: 1.8rem;
+    font-weight: 400;
+    color: var(--text-color-secundary);
+
+    width: 64.8rem;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: .2rem solid var(--primary-color);
+    border-radius: .5rem;
+    
+    width: max-content;
+
+    font-weight: 700;
+
+    padding: 1.2rem 3.2rem;
+    margin-top: .8rem;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color-hover);
+}
+
+#app {
+    padding: 6.2rem 10.2rem 0;
+}
+
+.home #app {
+    display: grid;
+    height: 60%;
+    place-content: center;
+}
+
+.universe body {
+    background: var(--bg-universe) no-repeat center center/cover;
+}
+
+.explorer body {
+    background: var(--bg-explorer) no-repeat center center/cover;
+}
+
+.home nav a:nth-child(1),
+.universe nav a:nth-child(2), 
+.explorer nav a:nth-child(3) {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
