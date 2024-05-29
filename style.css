@@ -77,7 +77,7 @@ p {
     align-items: center;
 }
 
-button {
+button, #button {
     background-color: transparent;
     color: var(--primary-color);
     border: .2rem solid var(--primary-color);
@@ -91,7 +91,7 @@ button {
     margin-top: .8rem;
 }
 
-button:hover {
+button:hover, #button:hover {
     background-color: var(--primary-color);
     color: var(--text-color-hover);
 }
